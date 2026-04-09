@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barak Shamailov | AI & Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="grid-overlay"></div>
+        <div class="bg-orb bg-orb-1"></div>
+        <div class="bg-orb bg-orb-2"></div>
+        <div class="bg-orb bg-orb-3"></div>
+    </div>
+
+    <!-- Particles Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">BS<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#journey">Journey</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" onclick="closeMobile()">About</a>
+        <a href="#journey" onclick="closeMobile()">Journey</a>
+        <a href="#skills" onclick="closeMobile()">Skills</a>
+        <a href="#projects" onclick="closeMobile()">Projects</a>
+        <a href="#education" onclick="closeMobile()">Education</a>
+        <a href="#contact" onclick="closeMobile()">Get in Touch</a>
+    </div>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <div class="pulse-dot"></div>
+                Open to AI & Software Engineering Opportunities
+            </div>
+            <h1 class="hero-name">
+                Hi, I'm <span class="gradient-text">Barak Shamailov</span>
+            </h1>
+            <p class="hero-tagline">
+              Software Engineer with a <strong>B.Sc. in Computer Science</strong> and 3+ years of experience in software quality and automation at a leading defense organization
+              Experienced in <strong>Python</strong>, backend development, and process automation, including building tools that improved validation efficiency by 30%.
+              Currently specializing in <strong>AI Engineering</strong>, with a focus on <strong>Generative AI</strong>, <strong>LLMs</strong>, and building intelligent systems through hands-on projects and continuous learning.
+            </p>
+            <div class="hero-cta-group">
+                <a href="#contact" class="btn-primary">
+                    <i class="fas fa-paper-plane"></i> Let's Connect
+                </a>
+                <a href="#projects" class="btn-secondary">
+                    <i class="fas fa-code"></i> View My Work
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual reveal">
+                    <div class="about-image-frame">
+                        <div class="about-avatar-placeholder">
+                            <span class="avatar-initials">BS</span>
+                        </div>
+                    </div>
+                    <div class="about-floating-card floating-card-1">
+                        <div class="floating-card-icon">🎯</div>
+                        <div class="floating-card-label">Focus</div>
+                        <div class="floating-card-value">AI Engineering</div>
+                    </div>
+                    <div class="about-floating-card floating-card-2">
+                        <div class="floating-card-icon">⚡</div>
+                        <div class="floating-card-label">Impact</div>
+                        <div class="floating-card-value">30% Time Saved</div>
+                    </div>
+                </div>
+
+                <div class="about-text reveal reveal-delay-2">
+                    <div class="section-label">About Me</div>
+                    <h3>From Quality Engineering to <span class="gradient-text">AI-Driven Innovation</span></h3>
+                    <p>
+                        I'm a Computer Science graduate with a strong foundation in software development, Python expertise, and hands-on experience shipping production tools in mission-critical defense environments at <strong>Elbit Systems</strong>.
+                    </p>
+                    <p>
+                        My career started in software quality, where I developed deep expertise in the full SDLC, cross-team collaboration, and process automation. Now, I'm channeling that engineering discipline into my true passion: <strong>AI Engineering</strong>.
+                    </p>
+                    <p>
+                        I'm currently deepening my expertise in Generative AI: including LLMs, AI agents, multi-agent systems, RAG architectures, and agent orchestration. Through intensive self-learning and the <strong>Nebius Academy AI Engineer Program</strong>, taught by engineers from AI21 Labs, NVIDIA, and the Israel AI Agency.
+                    </p>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap highlight-icon"></i>
+                            <span class="highlight-text">B.Sc. Computer Science</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-building highlight-icon"></i>
+                            <span class="highlight-text">3+ Years at Elbit Systems</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-robot highlight-icon"></i>
+                            <span class="highlight-text">AI Agent Development</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-bolt highlight-icon"></i>
+                            <span class="highlight-text">Automation & Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== JOURNEY ==================== -->
+    <section id="journey">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">My Journey</div>
+                <h2 class="section-title">Career <span class="gradient-text">Transformation</span></h2>
+                <p class="section-subtitle">From quality assurance to AI engineering a deliberate path driven by curiosity, discipline, and a passion for building intelligent systems.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item current reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-date">March 2026 – July 2026</div>
+                        <div class="timeline-role">AI Engineer Program</div>
+                        <div class="timeline-company">Nebius Academy</div>
+                        <div class="timeline-desc">
+                            <ul>
+                                <li>Intensive, industry-led program taught by engineers from AI21 Labs, Nebius, NVIDIA, and the Israel AI Agency</li>
+                                <li>Focus on LLM architecture, Generative AI systems, and real-world AI product development</li>
+                                <li>Training in MLOps, AI system deployment, and performance optimization (including quantization and inference efficiency)</li>
+                                <li>Exposure to post-training techniques and reinforcement learning for model alignment</li>
+                            </ul>
+                        </div>
+                        <span class="timeline-tag">🚀 Current Focus</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal reveal-delay-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-date">November 2022 – Present</div>
+                        <div class="timeline-role">Software Quality Manager</div>
+                        <div class="timeline-company">Elbit Systems Ltd · Haifa, Israel</div>
+                        <div class="timeline-desc">
+                            <ul>
+                                <li>Ensured software compliance with DO-178C, MIL-STD-498, and AS9100/9115 standards</li>
+                                <li>Conducted audits across the entire SDLC for mission-critical defense platforms</li>
+                                <li>Collaborated with multidisciplinary R&D teams (hardware, software, systems)</li>
+                                <li>Developed an internal <strong>Python automation tool</strong> that reduced manual review time by 30%</li>
+                                <li>Verified and released key software documents (SDP, SRS, SDD, STD, STR, SVD)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal reveal-delay-2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-date">2020 – 2024</div>
+                        <div class="timeline-role">B.Sc. in Computer Science</div>
+                        <div class="timeline-company">The Open University of Israel · GPA 85</div>
+                        <div class="timeline-desc">
+                            <ul>
+                                <li>Strong foundation in algorithms, OS, cybersecurity, databases, and networking</li>
+                                <li>Built multiple projects: client-server systems, authentication protocols, sync apps</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Technical Skills</div>
+                <h2 class="section-title">Tools & <span class="gradient-text">Technologies</span></h2>
+                <p class="section-subtitle">A versatile skill set spanning software development, AI/ML frameworks, and engineering best practices.</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">🤖</div>
+                    <h4>AI & LLM Frameworks</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">LangGraph</span>
+                        <span class="skill-tag">CrewAI</span>
+                        <span class="skill-tag">AutoGen</span>
+                        <span class="skill-tag">MCP</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">AI Agents</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal reveal-delay-1">
+                    <div class="skill-card-icon">💻</div>
+                    <h4>Programming Languages</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal reveal-delay-2">
+                    <div class="skill-card-icon">🛠️</div>
+                    <h4>Frameworks & Libraries</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">JavaFX</span>
+                        <span class="skill-tag">Tkinter</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal reveal-delay-3">
+                    <div class="skill-card-icon">🗄️</div>
+                    <h4>Databases</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">SQLite</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal reveal-delay-4">
+                    <div class="skill-card-icon">⚙️</div>
+                    <h4>Tools & Platforms</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Jira</span>
+                        <span class="skill-tag">Cursor</span>
+                        <span class="skill-tag">PyCharm</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal reveal-delay-4">
+                    <div class="skill-card-icon">🧠</div>
+                    <h4>Core Knowledge</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Algorithms</span>
+                        <span class="skill-tag">Operating Systems</span>
+                        <span class="skill-tag">Cybersecurity</span>
+                        <span class="skill-tag">Networking</span>
+                        <span class="skill-tag">SDLC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Portfolio</div>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">Hands-on engineering work demonstrating backend development, security, and system design skills.</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-card-header">
+                        <div class="project-icon">🗄️</div>
+                        <div class="project-links">
+                            <a href="https://github.com/BarakShamailov" target="_blank" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h4>Storage Server</h4>
+                        <p>A client-server application for secure file storage. Server-side built in Python with a C++ client, demonstrating cross-language interoperability and network programming skills.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>C++</span>
+                            <span>Networking</span>
+                            <span>Client-Server</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-1">
+                    <div class="project-card-header">
+                        <div class="project-icon">🔄</div>
+                        <div class="project-links">
+                            <a href="https://github.com/BarakShamailov" target="_blank" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h4>Synchronized Folder</h4>
+                        <p>A cloud-like file synchronization application using WebSockets for real-time communication and Tkinter for a user-friendly GUI. Demonstrates real-time data sync architecture.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>WebSockets</span>
+                            <span>Tkinter</span>
+                            <span>Real-time Sync</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-2">
+                    <div class="project-card-header">
+                        <div class="project-icon">🔐</div>
+                        <div class="project-links">
+                            <a href="https://github.com/BarakShamailov" target="_blank" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h4>Kerberos Protocol</h4>
+                        <p>Implementation of the Kerberos authentication protocol in Python. Built for secure authentication and encrypted communication — showcasing deep understanding of cybersecurity fundamentals.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Kerberos</span>
+                            <span>Encryption</span>
+                            <span>Security</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EDUCATION ==================== -->
+    <section id="education">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Education</div>
+                <h2 class="section-title">Academic <span class="gradient-text">Background</span></h2>
+                <p class="section-subtitle">Continuous learning as a core value — from a formal CS degree to cutting-edge AI training.</p>
+            </div>
+
+            <div class="edu-grid">
+                <div class="edu-card reveal">
+                    <span class="edu-card-badge badge-program">AI Program</span>
+                    <h4>AI Engineer Program</h4>
+                    <div class="edu-institution">Nebius Academy</div>
+                    <div class="edu-date">March 2026 – July 2026</div>
+                    <div class="edu-detail">
+                        Intensive, industry-led program taught by engineers from AI21 Labs, Nebius, NVIDIA, and the Israel AI Agency. Focused on Generative AI, LLM architecture, MLOps, and AI system performance optimization.                    </div>
+                </div>
+
+                <div class="edu-card reveal reveal-delay-1">
+                    <span class="edu-card-badge badge-degree">Degree</span>
+                    <h4>B.Sc. in Computer Science</h4>
+                    <div class="edu-institution">The Open University of Israel</div>
+                    <div class="edu-date">2020 – 2024 · GPA 85</div>
+                    <div class="edu-detail">
+                        Comprehensive program covering algorithms, operating systems, cybersecurity fundamentals, database management, and networking. Built multiple full-stack and backend projects.
+                    </div>
+                </div>
+
+                <div class="edu-card reveal reveal-delay-2">
+                    <span class="edu-card-badge badge-degree">Diploma</span>
+                    <h4>Practical Engineer — Electrician</h4>
+                    <div class="edu-institution">ORT Colleges</div>
+                    <div class="edu-date">2011 – 2013</div>
+                    <div class="edu-detail">
+                        Technical foundation in electrical engineering — demonstrating a lifelong drive for technical learning and hands-on problem solving.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Contact</div>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <p class="section-subtitle">Interested in collaborating or have an opportunity in AI or software engineering? I'd love to hear from you.</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info reveal">
+                    <h3>Get in Touch</h3>
+                    <p>I'm actively seeking AI engineering, backend development, and automation roles. Whether you're hiring, building a team, or just want to chat about AI — drop me a message.</p>
+
+                    <div class="contact-methods">
+                        <a href="mailto:baraks91@gmail.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-method-text">
+                                <div class="label">Email</div>
+                                <div class="value">baraks91@gmail.com</div>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/barak-shamailov" target="_blank" class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <div class="contact-method-text">
+                                <div class="label">LinkedIn</div>
+                                <div class="value">barak-shamailov</div>
+                            </div>
+                        </a>
+                        <a href="https://github.com/BarakShamailov" target="_blank" class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <div class="contact-method-text">
+                                <div class="label">GitHub</div>
+                                <div class="value">BarakShamailov</div>
+                            </div>
+                        </a>
+                        <a href="tel:+972549848245" class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-method-text">
+                                <div class="label">Phone</div>
+                                <div class="value">(054) 984-8245</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-card reveal reveal-delay-2">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="title" placeholder="Job Opportunity / Collaboration / Other">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell me about the opportunity or project..." required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-copy">
+                    © 2025 Barak Shamailov. Built with passion & purpose.
+                </div>
+                <div class="footer-socials">
+                    <a href="mailto:baraks91@gmail.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/barak-shamailov" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/BarakShamailov" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
