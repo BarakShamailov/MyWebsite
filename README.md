@@ -51,6 +51,4 @@ Custom **particles animation** using Canvas:
 - Interactive connection lines
 - Optimized for performance
 
----
 
-## 📂 Project Structure
