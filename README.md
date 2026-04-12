@@ -1,4 +1,4 @@
-# MyWebsite
+# personal-website
 ## 🌐 Personal Portfolio Website
 
 A modern, responsive personal portfolio website built to showcase my background, projects, and transition into AI Engineering.
