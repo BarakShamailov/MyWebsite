@@ -1,4 +1,6 @@
 # personal-website
+🌐 Live Demo: https://barakshamailov.github.io/personal-website/
+
 ## 🌐 Personal Portfolio Website
 
 A modern, responsive personal portfolio website built to showcase my background, projects, and transition into AI Engineering.
